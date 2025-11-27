@@ -43,6 +43,7 @@
                 <?php
                     include 'conexiune.php';
                     $sql = "SELECT * FROM carti";
+                    $results = $conn->query($sql);
                 ?>
                 <?php foreach ($results as $row): ?>
                     <tr>
